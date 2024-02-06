@@ -1,0 +1,204 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Introduction</title>
+        <style>
+            body{
+                background-color: azure;
+            }
+
+            /* section-1 */
+
+            .title{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title img{
+                display: block;
+                border-radius: 50%;
+                margin-top: 45px;
+            }
+
+            .title h1{
+                font-family: serif;
+                text-align: left;
+                margin-top: 30px;
+            }
+
+            .title h3{
+                font-weight: 400;
+                font-size: small;
+                font-family: sans-serif;
+            }
+
+
+
+            /* section-2 */
+            .section-2, .section-3{
+                height: 100vh;
+            }
+
+
+
+            .skills{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                height: 70vh;
+                justify-content: space-evenly;
+                align-items: flex-start;
+
+            }
+
+            .skills div{
+                height: 300px;
+                width: 300px;
+                background-color: beige;
+
+            }
+
+            .section-heading{
+                margin-top: 60px;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            .section-2{
+                text-align: center;
+            }
+
+            .skill-1 p, .skill-2 p{
+                padding: 10px;
+                text-align: justify;
+            }
+
+
+
+            /* section-3 */
+
+
+
+            .section-3{
+                text-align: center;
+            }
+
+            .section-3 > .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px;
+                height: 70vh;
+                margin-top: 50px;
+            }
+
+            .section-3 > .container .box1{
+                grid-area: 1 / 2 / 2 / 3;
+                background-color: aquamarine;
+            }
+            .section-3 > .container .box2{
+                grid-area: 1 / 3 / 2 / 4;
+                background-color: aquamarine;
+            }
+            .section-3 > .container .box3{
+                grid-area: 2 / 2 / 3 / 3;
+                background-color: aquamarine;
+            }
+            .section-3 > .container .box4{
+                grid-area: 2 / 3 / 3 / 4;
+                background-color: aquamarine;
+            }
+
+            .section-3 .container div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-size: larger;
+            }
+            
+
+
+
+            /* section-3 */
+
+
+
+            .section-4{
+                text-align: center;
+            }
+            .section-4 > .container{
+                display: flex;
+                height: 40vh;
+                justify-content: space-around;
+            }
+
+            .section-4 > .container div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background-color: chartreuse;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="section-1">
+            <div class="title">
+                <img src="./Passport_Size.jpg" alt="my picture" height="200" width="200">
+                <h1>Hello, Myself Harshit Agarwal</h1>
+                <h3>This picture is centered using <b>flexbox</b> properties</h3>
+            </div>
+        </section>
+        <hr>
+
+        <section class="section-2">
+            <h2 class="section-heading">Skills</h2>
+            <div class="skills">
+                <div class="skill-1">
+                    <h3>Web Development</h3>
+                    <p>
+                        I started learning web development from last 1 year and I know the basics of web development. I joined the web develpment course by Angela Yu so that I can become a professional web developer. I'm really enjoying doing exercises and projects and I am becoming professional in web development.
+                    </p>
+                </div>
+                <div class="skill-2">
+                    <h3>Problem Solving</h3>
+                    <p> I also really like solving programming questions on leetcode and my preferred language is c++. I have more than 1 year of experience in it and I've solved 180+ leetcode questions. my next target is 500 leetcode questions, I love questions on Dynamic programming and Arrays.  </p>
+                </div>
+            </div>
+            <p>Above 2 items are <b>flexbox</b> items placed horizontally</p>
+        </section>
+        <hr>
+
+        <section class="section-3">
+            <h2 class="section-heading">Programming Languages</h2>
+            <div class="container">
+                <div class="box1">C++</div>
+                <div class="box2">Javascript</div>
+                <div class="box3">HTML</div>
+                <div class="box4">CSS</div>
+            </div>
+            <p style="margin-bottom: 10px;" >Above design is acheived by using <b>Grid</b></p>
+        </section>
+        <hr>
+
+        <section class="section-4">
+            <h2 class="section-heading">Connect with Me</h2>
+            <div class="container">
+                <div class="box1"><a href="./mobile_number.html">Mobile Number</a></div>
+                <div class="box2"><a href="./Email_address.html">Email Address</a></div>
+                <div class="box3"><a href="https://www.linkedin.com/in/harshit-agarwal-730198248">Linkedin Profile</a></div>
+            </div>
+        </section>
+    </body>
+</html>
